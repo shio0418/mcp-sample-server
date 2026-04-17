@@ -2,6 +2,24 @@
 
 YouTube video のタイトルとチャンネル名を取得する MCP サーバーです。
 
+## ⚠️ Known Issue / 現在の挙動
+
+現状、MCPサーバー自体は正常に起動し、registerTool も成功しているログが確認できるが、
+GitHub Copilot Chat 上でツールが利用可能一覧に表示されない場合がある。
+
+#### 観測されている挙動
+- MCPサーバーは正常に起動する
+- youtube_info の登録ログは出力される
+- しかし Copilot Chat 側でツールが表示されない
+- 接続後に MCP クライアントが切断されるログが確認される場合がある
+
+#### 期待される状態
+Copilot Chat のツール一覧に youtube_info が表示される
+youtube_info(url) が実行可能になる
+
+#### 補足
+この問題はコード実装ではなく、MCP クライアント（Copilot）との接続・認識レイヤーの問題の可能性がある。
+
 ## 必要なもの
 
 - Node.js 18 以上
