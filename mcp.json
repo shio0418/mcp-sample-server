@@ -1,0 +1,9 @@
+{
+    "github.copilot.chat.mcpServers": {
+        "my-mcp-server": {
+            "command": "node",
+            "args": ["${workspaceFolder}/index.js"]
+        }
+    }
+}
+

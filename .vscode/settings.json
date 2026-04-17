@@ -1,0 +1,9 @@
+{
+  "github.copilot.chat.mcpServers": {
+    "youtube-server": {
+      "command": "/usr/bin/node",
+      "args": ["index.js"],
+      "cwd": "${workspaceFolder}"
+    }
+  }
+}
